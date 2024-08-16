@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.strange-weather {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15rem;
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: 3.5rem 4rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 74rem;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title-container p {
+    align-self: center;
+    font-size: 1.875rem;
+    margin: 0.5rem 0 0;
+}
+
+.logo {
+    object-fit: contain;
+    width: 5.25rem;
+    aspect-ratio: 1;
+    align-self: center;
+}
+
+.subtitle {
+    margin-top: 2rem;
+    font-size: 3.75rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle-large {
+    font-size: 3.125rem;
+    display: block;
+}
+
+.subtitle-small {
+    font-size: 1.875rem;
+    display: block;
+}
+
+.main-image,
+.content-image {
+    object-fit: contain;
+    width: 100%;
+    max-width: 63.5rem;
+    margin-top: 16rem;
+}
+
+.text-block {
+    margin-top: 6rem;
+    font-size: 1.875rem;
+    max-width: 63.5rem;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding-bottom: 6rem;
+    }
+
+    .main-header {
+        padding: 3.5rem 1.25rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 2.5rem;
+    }
+
+    .subtitle-large {
+        font-size: 2rem;
+    }
+
+    .subtitle-small {
+        font-size: 1.5rem;
+    }
+
+    .main-image,
+    .content-image {
+        margin-top: 2.5rem;
+    }
+
+    .text-block {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+    }
+}
